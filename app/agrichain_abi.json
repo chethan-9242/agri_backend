@@ -1,0 +1,63 @@
+[
+  {
+    "inputs": [
+      { "internalType": "string", "name": "batchId", "type": "string" },
+      { "internalType": "string", "name": "cropName", "type": "string" },
+      { "internalType": "uint256", "name": "quantityKg", "type": "uint256" },
+      { "internalType": "uint256", "name": "harvestDate", "type": "uint256" },
+      { "internalType": "string", "name": "imageUrl", "type": "string" }
+    ],
+    "name": "recordBatchCreated",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "batchId", "type": "string" },
+      { "internalType": "string", "name": "freshness", "type": "string" },
+      { "internalType": "string", "name": "spoilage", "type": "string" },
+      { "internalType": "string", "name": "damage", "type": "string" },
+      { "internalType": "uint256", "name": "confidence", "type": "uint256" }
+    ],
+    "name": "recordAIQuality",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "batchId", "type": "string" },
+      { "internalType": "uint256", "name": "pickupTime", "type": "uint256" },
+      { "internalType": "string", "name": "vehicleNumber", "type": "string" },
+      { "internalType": "string", "name": "destination", "type": "string" }
+    ],
+    "name": "recordPickup",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "batchId", "type": "string" },
+      { "internalType": "uint256", "name": "arrivalTime", "type": "uint256" },
+      { "internalType": "string", "name": "retailerIdOrName", "type": "string" }
+    ],
+    "name": "recordDelivery",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "string", "name": "batchId", "type": "string" },
+      { "internalType": "uint256", "name": "originalPricePerKg", "type": "uint256" },
+      { "internalType": "uint256", "name": "discountPercent", "type": "uint256" },
+      { "internalType": "uint256", "name": "finalPricePerKg", "type": "uint256" }
+    ],
+    "name": "recordRetailerPrice",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
